@@ -1,0 +1,41 @@
+.container {
+	margin: 0 auto;
+	max-width: 1100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 1rem;
+}
+
+.twitter {
+	margin-right: 1rem;
+	&:hover {
+		transform: translateY(-2px);
+	}
+}
+
+.linkedIn {
+	margin-right: 1rem;
+	&:hover {
+		transform: translateY(-2px);
+	}
+}
+.github {
+	margin-right: 1rem;
+	&:hover {
+		transform: translateY(-2px);
+	}
+}
+.instagram {
+	&:hover {
+		transform: translateY(-2px);
+	}
+}
+
+.Date {
+	flex-grow: 1;
+}
+svg:not(:root) {
+	overflow: hidden;
+	color: #663399;
+}
