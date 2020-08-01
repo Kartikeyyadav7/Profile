@@ -159,6 +159,11 @@ html {
     }
   }
 }
+@media (max-width: 800px) {
+  .headingImg {
+    display: none;
+  }
+}
 
 @media (max-width: 500px) {
   .heading {
@@ -168,6 +173,7 @@ html {
   }
   .headingImg {
     margin-top: 5rem;
+    display: block;
   }
   .headingcontent {
     font-family: Lato, sans-serif;
@@ -304,12 +310,6 @@ html {
         box-shadow: 0px 4px 11px -2px rgba(0, 0, 0, 0.71);
       }
     }
-  }
-}
-@media (max-width: 800px) {
-  .headingImg {
-    margin-top: 5rem;
-    display: none;
   }
 }
 @media (max-width: 400px) {
