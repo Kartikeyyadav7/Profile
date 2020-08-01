@@ -1,41 +1,68 @@
 .container {
-	margin: 0 auto;
-	max-width: 1100px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	padding: 1rem;
+  margin: 0 auto;
+  font-size: 2.2rem;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
 }
 
 .twitter {
-	margin-right: 1rem;
-	&:hover {
-		transform: translateY(-2px);
-	}
+  margin-right: 1.5rem;
+  font-size: 2.2rem;
+  &:hover {
+    transform: translateY(-2px);
+  }
 }
 
 .linkedIn {
-	margin-right: 1rem;
-	&:hover {
-		transform: translateY(-2px);
-	}
+  margin-right: 1.5rem;
+  font-size: 2.2rem;
+  &:hover {
+    transform: translateY(-2px);
+  }
 }
 .github {
-	margin-right: 1rem;
-	&:hover {
-		transform: translateY(-2px);
-	}
+  margin-right: 1.5rem;
+  font-size: 2.2rem;
+  &:hover {
+    transform: translateY(-2px);
+  }
 }
 .instagram {
-	&:hover {
-		transform: translateY(-2px);
-	}
+  font-size: 2.2rem;
+  &:hover {
+    transform: translateY(-2px);
+  }
 }
 
 .Date {
-	flex-grow: 1;
+  flex-grow: 1;
 }
 svg:not(:root) {
-	overflow: hidden;
-	color: #663399;
+  overflow: hidden;
+  color: #663399;
+}
+
+@media (max-width: 500px) {
+  .container {
+    font-size: 1.2rem;
+  }
+  .twitter {
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .linkedIn {
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .github {
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .instagram {
+    font-size: 1.2rem;
+  }
 }

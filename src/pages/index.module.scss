@@ -1,68 +1,72 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins|Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Poppins|Roboto&display=swap");
 $fonthead: Montserrat, sans-serif;
 $fontparagraph: Roboto, sans-serif;
 
+html {
+  font-size: 62.5%;
+}
+
 .heading {
-	margin-top: 9rem;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+  margin-top: 17rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .headingImg {
-	margin-top: 5rem;
+  margin-top: 5rem;
 }
 .headingcontent {
-	font-family: Lato, sans-serif;
-	width: 700px;
+  font-family: Lato, sans-serif;
+  width: 66.4rem;
 }
 .headh2 {
-	font-family: $fonthead;
-	font-weight: 300;
-	font-size: 2.1rem;
-	line-height: 5rem;
+  font-family: $fonthead;
+  font-weight: 300;
+  font-size: 3.5rem;
+  line-height: 5rem;
 }
 .headh21 {
-	font-family: $fonthead;
-	font-weight: 300;
-	font-size: 2rem;
-	line-height: 3.6rem;
+  font-family: $fonthead;
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 6rem;
 }
 .about {
-	margin-top: 7rem;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	padding-top: 5rem;
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 10rem;
 
-	&head {
-		font-family: $fonthead;
-		font-weight: 600;
-		font-size: 1.5rem;
-		text-transform: uppercase;
-		color: #663399;
-	}
-	&content {
-		font-family: $fontparagraph;
-		font-size: 1rem;
-		line-height: 1.5rem;
-		font-weight: 200;
-	}
+  &head {
+    font-family: $fonthead;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #663399;
+  }
+  &content {
+    font-family: $fontparagraph;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    font-weight: 200;
+  }
 }
 .skills {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	margin-top: 7rem;
-	padding-top: 5rem;
-	&head {
-		font-family: $fonthead;
-		font-weight: 600;
-		font-size: 1.5rem;
-		text-transform: uppercase;
-		color: #663399;
-	}
-	&set {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 1rem;
-	}
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 7rem;
+  padding-top: 10rem;
+  &head {
+    font-family: $fonthead;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #663399;
+  }
+  &set {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
 }
 .htmllogo,
 .csslogo,
@@ -72,224 +76,249 @@ $fontparagraph: Roboto, sans-serif;
 .gitlogo,
 .githublogo,
 .reactlogo,
-.photoshoplogo {
-	display: block;
-	width: 4rem;
-	height: 4rem;
-	padding-top: 1rem;
-	color: #663399;
+.photoshoplogo,
+.nodelogo,
+.mongodblogo {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  padding-top: 1rem;
+  color: #663399;
+}
+.reduxlogo,
+.figmaIcon {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  padding-top: 1rem;
 }
 .text1 {
-	font-family: $fontparagraph;
-	font-size: 1.5rem;
-	line-height: 1.5rem;
-	font-weight: 100;
+  font-family: $fontparagraph;
+  font-size: 2.5rem;
+  line-height: 1.5rem;
+  font-weight: 100;
 }
 .projects {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	margin-top: 7rem;
-	padding-top: 5rem;
-	Img {
-		border: 0.2rem solid #663399;
-	}
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 7rem;
+  padding-top: 10rem;
+  img {
+    border: 0.2rem solid #663399;
+  }
 }
 .projectp {
-	margin-top: 2rem;
-	// background: #663399;
-	transform: skew(-10deg);
-	transform-origin: top;
-	font-family: $fontparagraph;
-	font-size: 1rem;
-	line-height: 1.5rem;
-	font-weight: 200;
-	text-align: center;
+  margin-top: 2rem;
+  transform: skew(-10deg);
+  transform-origin: top;
+  font-family: $fontparagraph;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 200;
+  text-align: center;
 }
 .projHead {
-	font-family: $fonthead;
-	font-weight: 600;
-	font-size: 1.5rem;
-	text-transform: uppercase;
-	color: #663399;
+  font-family: $fonthead;
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #663399;
 }
 .contact {
-	display: grid;
-	text-align: center;
-	justify-content: center;
-	margin-top: 9rem;
-	margin-bottom: 5rem;
-	&head {
-		font-family: $fonthead;
-		font-weight: 400;
-		font-size: 1.5rem;
-		text-transform: uppercase;
-		color: black;
-	}
-	&button {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		text-decoration: none;
-		background-color: #663399;
-		padding: 0.5rem;
-		width: 7rem;
-		margin: 0 auto;
-		font-family: $fontparagraph;
-		font-size: 1rem;
-		line-height: 1.5rem;
-		font-weight: 200;
-		margin-top: 3rem;
-		color: whitesmoke;
-		&:hover {
-			transform: translateY(-0.3rem);
-			box-shadow: 0px 4px 11px -2px rgba(0, 0, 0, 0.71);
-		}
-	}
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  margin-top: 16rem;
+  margin-bottom: 11rem;
+  &head {
+    font-family: $fonthead;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: black;
+  }
+  &button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #663399;
+    padding: 0.5rem;
+    width: 14rem;
+    border-radius: 0.7rem;
+    margin: 0 auto;
+    font-family: $fontparagraph;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 200;
+    margin-top: 3rem;
+    color: whitesmoke;
+    &:hover {
+      transform: translateY(-0.3rem);
+      box-shadow: 0px 4px 11px -2px rgba(0, 0, 0, 0.71);
+    }
+  }
 }
+
 @media (max-width: 500px) {
-	.heading {
-		display: flex;
-		flex-direction: column;
-		margin: 8rem auto 0;
-	}
-	.headingImg {
-		margin-top: 5rem;
-		// display: none;
-	}
-	.headingcontent {
-		font-family: Lato, sans-serif;
-		width: 400px;
-	}
-	.headh2 {
-		font-family: $fonthead;
-		font-weight: 300;
-		font-size: 1.5rem;
-		line-height: 3rem;
-	}
-	.headh21 {
-		font-family: $fonthead;
-		font-weight: 250;
-		font-size: 1.5rem;
-		line-height: 3rem;
-	}
-	.about {
-		margin-top: 2rem;
-		display: flex;
-		flex-direction: column;
-		padding-top: 5rem;
-		&head {
-			font-family: $fonthead;
-			font-weight: 600;
-			font-size: 1.3rem;
-			text-transform: uppercase;
-			color: #663399;
-		}
-		&content {
-			font-family: $fontparagraph;
-			font-size: 1rem;
-			line-height: 1.5rem;
-			font-weight: 200;
-		}
-	}
-	.skills {
-		display: flex;
-		flex-direction: column;
-		margin-top: 2rem;
-		padding-top: 5rem;
-		&head {
-			font-family: $fonthead;
-			font-weight: 600;
-			font-size: 1.3rem;
-			text-transform: uppercase;
-			color: #663399;
-		}
-		&set {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			grid-gap: 1rem;
-		}
-	}
-	.htmllogo,
-	.csslogo,
-	.jslogo,
-	.bootstraplogo,
-	.sasslogo,
-	.gitlogo,
-	.githublogo,
-	.reactlogo,
-	.photoshoplogo {
-		display: block;
-		width: 3rem;
-		height: 4rem;
-		padding-top: 1rem;
-		color: #663399;
-	}
-	.text1 {
-		font-family: $fontparagraph;
-		font-size: 1.3rem;
-		line-height: 1.5rem;
-		font-weight: 100;
-	}
-	.projects {
-		display: flex;
-		flex-direction: column;
-		margin-top: 2rem;
-		padding-top: 5rem;
-		Img {
-			border: 0.2rem solid #663399;
-		}
-	}
-	.projectp {
-		margin-top: 1.3rem;
-		transform: skew(-10deg);
-		transform-origin: top;
-		font-family: $fontparagraph;
-		font-size: 1rem;
-		line-height: 1.5rem;
-		font-weight: 200;
-		text-align: center;
-	}
-	.projHead {
-		font-family: $fonthead;
-		font-weight: 600;
-		font-size: 1.3rem;
-		text-transform: uppercase;
-		color: #663399;
-	}
-	.contact {
-		display: grid;
-		text-align: center;
-		justify-content: center;
-		margin-top: 9rem;
-		margin-bottom: 5rem;
-		&head {
-			font-family: $fonthead;
-			font-weight: 400;
-			font-size: 1.3rem;
-			text-transform: uppercase;
-			color: black;
-			line-height: 1.5rem;
-			text-align: center;
-		}
-		&button {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-decoration: none;
-			background-color: #663399;
-			padding: 0.5rem;
-			width: 7rem;
-			margin: 0 auto;
-			font-family: $fontparagraph;
-			font-size: 1rem;
-			line-height: 1.5rem;
-			font-weight: 200;
-			margin-top: 1rem;
-			color: whitesmoke;
-			&:hover {
-				transform: translateY(-0.3rem);
-				box-shadow: 0px 4px 11px -2px rgba(0, 0, 0, 0.71);
-			}
-		}
-	}
+  .heading {
+    display: flex;
+    flex-direction: column;
+    margin: 8rem auto 0;
+  }
+  .headingImg {
+    margin-top: 5rem;
+  }
+  .headingcontent {
+    font-family: Lato, sans-serif;
+    max-width: 40rem;
+  }
+  .headh2 {
+    font-family: $fonthead;
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .headh21 {
+    font-family: $fonthead;
+    font-weight: 250;
+    font-size: 2.5rem;
+    line-height: 5rem;
+  }
+  .about {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    &head {
+      font-family: $fonthead;
+      font-weight: 600;
+      font-size: 2.3rem;
+      text-transform: uppercase;
+      color: #663399;
+    }
+    &content {
+      font-family: $fontparagraph;
+      font-size: 2rem;
+      line-height: 3.5rem;
+      font-weight: 200;
+    }
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding-top: 5rem;
+    &head {
+      font-family: $fonthead;
+      font-weight: 600;
+      font-size: 2.3rem;
+      text-transform: uppercase;
+      color: #663399;
+    }
+    &set {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+    }
+  }
+  .htmllogo,
+  .csslogo,
+  .jslogo,
+  .bootstraplogo,
+  .sasslogo,
+  .gitlogo,
+  .githublogo,
+  .reactlogo,
+  .photoshoplogo {
+    display: block;
+    width: 5rem;
+    height: 6rem;
+    padding-top: 2rem;
+    color: #663399;
+  }
+  .text1 {
+    font-family: $fontparagraph;
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    font-weight: 100;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding-top: 5rem;
+    img {
+      border: 0.2rem solid #663399;
+    }
+  }
+  .projectp {
+    margin-top: 1.3rem;
+    transform: skew(-10deg);
+    transform-origin: top;
+    font-family: $fontparagraph;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 200;
+    text-align: center;
+  }
+  .projHead {
+    font-family: $fonthead;
+    font-weight: 600;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: #663399;
+  }
+  .contact {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    margin-top: 9rem;
+    margin-bottom: 5rem;
+    &head {
+      font-family: $fonthead;
+      font-weight: 400;
+      font-size: 2.3rem;
+      text-transform: uppercase;
+      color: black;
+      line-height: 3.5rem;
+      text-align: center;
+    }
+    &button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      background-color: #663399;
+      padding: 0.5rem;
+      width: 15rem;
+      margin: 0 auto;
+      font-family: $fontparagraph;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      font-weight: 200;
+      margin-top: 1rem;
+      color: whitesmoke;
+      &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0px 4px 11px -2px rgba(0, 0, 0, 0.71);
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .headingImg {
+    margin-top: 5rem;
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .headingcontent {
+    max-width: 34rem;
+  }
+}
+@media (max-width: 350px) {
+  .headingcontent {
+    max-width: 30rem;
+  }
 }

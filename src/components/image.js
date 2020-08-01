@@ -1,6 +1,6 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -14,26 +14,47 @@ import Img from 'gatsby-image';
  */
 
 const Image = () => {
-	const data = useStaticQuery(graphql`
-		query {
-			placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-				childImageSharp {
-					fluid(maxWidth: 300) {
-						...GatsbyImageSharpFluid
-					}
-				}
-			}
-			project1: file(relativePath: { eq: "projectmovie.png" }) {
-				childImageSharp {
-					fluid(maxWidth: 300) {
-						...GatsbyImageSharpFluid
-					}
-				}
-			}
-		}
-	`);
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      project1: file(relativePath: { eq: "projectmovie.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      project2: file(relativePath: { eq: "projectsocial.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      project3: file(relativePath: { eq: "projectecommerce.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      reduxIcon: file(relativePath: { eq: "reduxIcon.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
 
-	return <Img fluid={data.placeholderImage.childImageSharp.fluid} />;
-};
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+}
 
-export default Image;
+export default Image
