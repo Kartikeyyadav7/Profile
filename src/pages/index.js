@@ -115,7 +115,9 @@ const IndexPage = props => {
               <Img fluid={props.data.project1.childImageSharp.fluid} />
             </a>
             <p className={indexStyles.projectp}>
-              Movie Search app was made by me from scratch with help of TMdb api
+              Movie Search app{" "}
+              <b style={{ display: "block" }}> Technologies :</b> React and TMDB
+              Api
             </p>
           </div>
 
@@ -129,7 +131,9 @@ const IndexPage = props => {
             </a>
             <p className={indexStyles.projectp}>
               The fullStack App for the developers and designers to post their
-              work and user can comment and like on their posts
+              work and user can comment and like on their posts{" "}
+              <b style={{ display: "block" }}> Technologies :</b>
+              MongoDb | React | Node | Express | Redux
             </p>
           </div>
           <div className={indexStyles.project1}>
@@ -142,19 +146,14 @@ const IndexPage = props => {
             </a>
             <p className={indexStyles.projectp}>
               A fullStack App made like a ecommerce website and integrated with
-              payments and all other stuffs
+              payments and all other stuffs .{" "}
+              <b style={{ display: "block" }}> Technologies :</b> MongoDb |
+              React | Node | Express | Redux
             </p>
           </div>
         </div>
       </div>
-      <div
-        className={indexStyles.contact}
-        id="contact"
-        data-sal="fade"
-        // data-sal-delay="2s"
-        // data-sal-duration="1s"
-        // data-sal-easing="ease-in"
-      >
+      <div className={indexStyles.contact} id="contact">
         <h2 className={indexStyles.contacthead}>
           <b>Want a developer</b> or you have some suggestions or just want a
           fun chat I am always upto it
