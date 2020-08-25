@@ -11,7 +11,7 @@ function footer() {
       </div>
       <div>
         <a
-          href="https://twitter.com/_Kartikey_7"
+          href="https://twitter.com/kartikey_yadav7"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -20,7 +20,7 @@ function footer() {
       </div>
       <div className={footerStyles.linkedIn}>
         <a
-          href="https://www.linkedin.com/in/kartikey-yadav-29aba9190/"
+          href="https://www.linkedin.com/in/kartikeyyadav/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -39,7 +39,7 @@ function footer() {
       </div>
       <div className={footerStyles.instagram}>
         <a
-          href="https://www.instagram.com/kartikey_kumar_7/"
+          href="https://www.instagram.com/kartikeyyadav_7/"
           target="_blank"
           rel="noopener noreferrer"
         >
