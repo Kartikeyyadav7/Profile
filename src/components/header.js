@@ -21,6 +21,16 @@ const Header = ({ siteTitle }) => {
 
         <div className={state ? headerStyles.active : headerStyles.content}>
           <h3>
+            <a
+              href="https://developersdomain.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={headerStyles.about}
+            >
+              Blog
+            </a>
+          </h3>
+          <h3>
             <a href="#about" className={headerStyles.about}>
               About
             </a>
