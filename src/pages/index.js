@@ -36,11 +36,12 @@ const IndexPage = props => {
       <div className={indexStyles.about} id="about">
         <h2 className={indexStyles.abouthead}>About</h2>
         <p className={indexStyles.aboutcontent}>
-          Hey, I am a front-end developer and I love building beautifull and
-          responsive websites for the web . In this fast paced industry I am
-          always try my best to improve my skills and give the best user
-          experiences I believe that hard work and consistency can lead to
-          beautiful things in life
+          Hey, I am a full-stack developer and I love building beautifull and
+          responsive websites for the web and scalable backends . In this fast
+          paced industry I am always try my best to improve my skills and give
+          the best user experiences I believe that hard work and consistency can
+          lead to beautiful things in life . Fun Fact - I love anime, if I am
+          not programming you can find me watching awesome animes
         </p>
       </div>
 
