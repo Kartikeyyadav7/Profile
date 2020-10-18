@@ -25,8 +25,8 @@ const IndexPage = props => {
         <div className={indexStyles.headingcontent}>
           <h2 className={indexStyles.headh2}>Hello!</h2>
           <h2 className={indexStyles.headh21}>
-            I'm <b>Kartikey Yadav</b> , a design-minded Front-end developer
-            focused on developing beautiful interfaces and experiences{" "}
+            I'm <b>Kartikey Yadav</b> , a Full-Stack Web developer focused on
+            developing beautiful interfaces , experiences and scalable backends
           </h2>
         </div>
         <div className={indexStyles.headingImg}>
@@ -151,6 +151,21 @@ const IndexPage = props => {
               React | Node | Express | Redux
             </p>
           </div>
+          <div className={indexStyles.project1}>
+            <a
+              href="https://developersdomain.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Img fluid={props.data.project4.childImageSharp.fluid} />
+            </a>
+            <p className={indexStyles.projectp}>
+              A blog website for blogs and any stuff I want to share to the
+              world of developers.{" "}
+              <b style={{ display: "block" }}> Technologies :</b> Gatsby |
+              Netlify CMS | Google Analytics | SEO
+            </p>
+          </div>
         </div>
       </div>
       <div className={indexStyles.contact} id="contact">
@@ -197,6 +212,13 @@ export const query = graphql`
       }
     }
     project3: file(relativePath: { eq: "projectecommerce.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    project4: file(relativePath: { eq: "blogsite.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

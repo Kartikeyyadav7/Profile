@@ -49,7 +49,7 @@ const Header = ({ siteTitle }) => {
           <h3>
             <a href="#contact" className={headerStyles.contact}>
               Contact
-            </a>
+            </a> 
           </h3>
         </div>
       </div>

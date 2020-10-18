@@ -7,6 +7,9 @@
   justify-content: space-around;
   padding: 1rem;
 }
+.icons {
+  display: flex;
+}
 
 .twitter {
   margin-right: 1.5rem;
@@ -47,22 +50,26 @@ svg:not(:root) {
 
 @media (max-width: 500px) {
   .container {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    flex-direction: column;
+  }
+  .icons {
+    margin-top: 1.5rem;
   }
   .twitter {
     margin-right: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .linkedIn {
     margin-right: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   .github {
     margin-right: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   .instagram {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 }
