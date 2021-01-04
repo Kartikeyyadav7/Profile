@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => {
     <header className={headerStyles.header}>
       <div className={headerStyles.container}>
         <h3 className={headerStyles.h3}>
-          <Link to="/" className={headerStyles.link}>
+          <Link to="/" className={headerStyles.link}> 
             {siteTitle}
           </Link>
         </h3>

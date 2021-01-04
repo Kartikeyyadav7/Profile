@@ -57,7 +57,7 @@ const IndexPage = props => {
             <DiCss3 className={indexStyles.csslogo} />{" "}
           </h2>
           <h2>
-            <span className={indexStyles.text1}>Javascipt</span>{" "}
+            <span className={indexStyles.text1}>Javascript</span>{" "}
             <DiJsBadge className={indexStyles.jslogo} />{" "}
           </h2>
           <h2>
